@@ -1,4 +1,121 @@
-! new_hiki
+{{toc}}
+!rackについて
+Rack入門(by近藤宇智朗,Ruby徹底攻略，WEB+DB PRESS plus  技術評論社，2014), p.159)に
+rackが一体何をしているのかを理解するための単純で分かりやすい解説がある．
+
+まずサーバーとして以下のconfig.ruを元に起動する．
+<<< ruby
+require 'rack'
+require 'pp'
+
+class SimpleApp
+  def call(env)
+#    body = env.pretty_inspect
+#=begin
+    request = Rack::Request.new(env)
+    body = <<-EOB
+Name: #{request.params['name']}
+Your Client: #{request.user_agent}
+EOB
+#=end
+    return [200, {'Content-Type' => 'text/plain'}, [body]]
+  end
+end
+
+run SimpleApp.new
+>>>
+ここでターミナルをもう一つ開き，curlコマンドを打つと，
+<<<tcsh
+[bob:~] bob% curl "http://localhost:9292?name=Nishitani" -v
+* Rebuilt URL to: http://localhost:9292/?name=Nishitani
+*   Trying ::1...
+* Connected to localhost (::1) port 9292 (#0)
+> GET /?name=Nishitani HTTP/1.1
+> Host: localhost:9292
+> User-Agent: curl/7.43.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Content-Type: text/plain
+< Transfer-Encoding: chunked
+< Connection: close
+< Server: thin
+< 
+Name: Nishitani
+Your Client: curl/7.43.0
+* Closing connection 0
+>>>
+と返ってくる．テキストではさらにhtmlへの簡単な変更手順が記されている．
+
+!istとgithub_daddygonのmerge
+以下のとおりmergeをおこなった．istでのrunningの特殊設定を一般化する時の参考にすべき．
+
+<<<
+git merge --no-commit --no-ff daddygongon
+Already up-to-date.
+[bob:~/Sites/new_ist] bob% git remote -v
+origin	git@github.com:daddygongon/hiki.git (fetch)
+origin	git@github.com:daddygongon/hiki.git (push)
+[bob:~/Sites/new_ist] bob% git fetch origin
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+[bob:~/Sites/new_ist] bob% git branch -r
+  origin/ist_convert
+  origin/master
+  origin/math_highlight_included
+  origin/small_diff
+[bob:~/Sites/new_ist] bob% git branch -a
+* daddygongon
+  master
+  remotes/origin/ist_convert
+  remotes/origin/master
+  remotes/origin/math_highlight_included
+  remotes/origin/small_diff
+
+bob% git merge --no-commit --no-ff remotes/origin/math_highlight_included 
+Auto-merging tool/convert.rb
+CONFLICT (add/add): Merge conflict in tool/convert.rb
+Auto-merging misc/plugin/attach.rb
+CONFLICT (add/add): Merge conflict in misc/plugin/attach.rb
+Auto-merging lib/hiki/util.rb
+CONFLICT (add/add): Merge conflict in lib/hiki/util.rb
+Auto-merging lib/hiki/storage/flatfile.rb
+CONFLICT (add/add): Merge conflict in lib/hiki/storage/flatfile.rb
+Auto-merging lib/hiki/session.rb
+CONFLICT (add/add): Merge conflict in lib/hiki/session.rb
+
+      # added for no implicit conversion of CGI::Cookie into String (TypeErro\
+r)                                                                            
+      session_id=session_id[0] if session_id.is_a?(Array)
+
+
+Auto-merging hiki.rb
+CONFLICT (add/add): Merge conflict in hiki.rb
+Auto-merging dot.htaccess
+CONFLICT (add/add): Merge conflict in dot.htaccess
+Auto-merging Rakefile
+CONFLICT (add/add): Merge conflict in Rakefile
+Auto-merging Gemfile.lock
+CONFLICT (add/add): Merge conflict in Gemfile.lock
+Auto-merging .gitignore
+CONFLICT (add/add): Merge conflict in .gitignore
+Automatic merge failed; fix conflicts and then commit the result.
+
+bob% git reset HEAD
+Unstaged changes after reset:
+M	.gitignore
+M	Gemfile.lock
+M	Rakefile
+M	dot.htaccess
+M	hiki.rb
+M	lib/hiki/session.rb
+M	lib/hiki/storage/flatfile.rb
+M	lib/hiki/util.rb
+M	misc/plugin/attach.rb
+M	tool/convert.rb
+>>>
+
+!apacheでの起動法あれこれ
 gem化しつつあるhikiをapache上で動かすことを考える．
 * passenger
 ** installが中途半．下記参照
@@ -7,6 +124,8 @@ gem化しつつあるhikiをapache上で動かすことを考える．
 ** $LOAD_PATHにlibが明示されてないので，いれた．
 ** gem filesが軒並みLoadError.
 *** gemのpathかな．．．
+
+
 
 Mac OS X 10.7.5 (LION)でRuby on Railsの実行環境を構築する
 http://kanjuku-tomato.blogspot.jp/2013/01/mac-os-x-1075-lionruby-on-railsweb.html
