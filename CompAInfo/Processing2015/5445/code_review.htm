@@ -1,0 +1,926 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:mv="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta name=表題 content="">
+<meta name=キーワード content="">
+<meta http-equiv=Content-Type content="text/html; charset=csShiftJIS">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="code_review.files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>前川　龍一郎</o:Author>
+  <o:LastAuthor>西谷 滋人</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>67</o:TotalTime>
+  <o:Created>2015-07-27T08:53:00Z</o:Created>
+  <o:LastSaved>2015-07-27T08:53:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>281</o:Words>
+  <o:Characters>1603</o:Characters>
+  <o:Company>関西学院大学</o:Company>
+  <o:Lines>13</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>1881</o:CharactersWithSpaces>
+  <o:Version>14.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="code_review.files/themedata.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>150</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>JA</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:NoLineBreaksAfter Lang="JA">$([{￡\‘“〈《「『【〔＄（［｛｢&#65505;￥</w:NoLineBreaksAfter>
+  <w:NoLineBreaksBefore Lang="JA">!%),.:;?]}￠°’”‰′″℃、。々〉》」』】〕゛゜ゝゞ・ヽヾ！％），．：；？］｝｡｣､･ﾞﾟ&#65504;</w:NoLineBreaksBefore>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="276">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 1"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 2"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 3"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 4"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 5"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 6"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 7"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 8"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 9"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-536859905 -1073711037 9 0 511 0;}
+@font-face
+	{font-family:"ＭＳ 明朝";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-charset:78;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1791491579 18 0 131231 0;}
+@font-face
+	{font-family:"ＭＳ ゴシック";
+	panose-1:2 11 6 9 7 2 5 8 2 4;
+	mso-font-charset:78;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1791491579 18 0 131231 0;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"@ＭＳ ゴシック";
+	panose-1:2 11 6 9 7 2 5 8 2 4;
+	mso-font-charset:78;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1791491579 18 0 131231 0;}
+@font-face
+	{font-family:"@ＭＳ 明朝";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-charset:78;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1791491579 18 0 131231 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:Century;
+	mso-ascii-font-family:Century;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"ＭＳ 明朝";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Century;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"見出し 1 (文字)";
+	mso-style-next:標準;
+	margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"ＭＳ ゴシック";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Arial;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:normal;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"表題 (文字)";
+	mso-style-next:標準;
+	margin-top:12.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:0mm;
+	text-align:center;
+	mso-pagination:none;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"ＭＳ ゴシック";
+	mso-hansi-font-family:Arial;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#0066C0;
+	mso-text-animation:none;
+	text-decoration:none;
+	text-underline:none;
+	text-decoration:none;
+	text-line-through:none;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+span.a
+	{mso-style-name:"表題 (文字)";
+	mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:表題;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"ＭＳ ゴシック";
+	mso-hansi-font-family:Arial;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;}
+span.1
+	{mso-style-name:"見出し 1 (文字)";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"見出し 1";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"ＭＳ ゴシック";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Arial;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;}
+span.author
+	{mso-style-name:author;
+	mso-style-unhide:no;}
+span.a-color-secondary
+	{mso-style-name:a-color-secondary;
+	mso-style-unhide:no;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.5pt;
+	mso-ansi-font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:Century;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:99.25pt 30.0mm 30.0mm 30.0mm;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:18.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:標準の表;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0mm 5.4pt 0mm 5.4pt;
+	mso-para-margin:0mm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:Century;
+	mso-ascii-font-family:Century;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Century;
+	mso-hansi-theme-font:minor-latin;
+	mso-font-kerning:1.0pt;}
+table.MsoTableGrid
+	{mso-style-name:"表 (格子)";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:39;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0mm 5.4pt 0mm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0mm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:Century;
+	mso-ascii-font-family:Century;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Century;
+	mso-hansi-theme-font:minor-latin;
+	mso-font-kerning:1.0pt;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027">
+  <v:textbox inset="5.85pt,.7pt,5.85pt,.7pt"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=JA link="#0066C0" vlink="#954F72" style='tab-interval:42.0pt;
+text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:18.0pt'>
+
+<p class=MsoTitle><span lang=EN-US>Processing</span><span style='font-family:
+"ＭＳ ゴシック";mso-ascii-font-family:Arial;mso-ascii-theme-font:major-latin;
+mso-hansi-font-family:Arial;mso-hansi-theme-font:major-latin'>でゲームを作る</span></p>
+
+<p class=MsoNormal align=right style='text-align:right;word-break:break-all'><span
+lang=EN-US>5445 </span><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:
+Century;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:
+minor-latin'>情報科学科</span> <span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:
+Century;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:
+minor-latin'>　前川龍一郎</span></p>
+
+<h1><span style='font-family:"ＭＳ ゴシック";mso-ascii-font-family:Arial;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"ＭＳ ゴシック";mso-fareast-theme-font:major-fareast;
+mso-hansi-font-family:Arial;mso-hansi-theme-font:major-latin'>このゲームを作る動機</span></h1>
+
+<p class=MsoNormal><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:Century;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>今回何かゲームを</span><span
+lang=EN-US>processing</span><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:
+Century;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:
+minor-latin'>で作れと言われた時に、すぐに今回作ったゲームが思い浮かんだ。このゲーム自体は既にあるゲームではある〔</span><span
+lang=EN-US>URL1</span><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:
+Century;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:
+minor-latin'>〕のだが、他言語かつソースコードもなかったので、コード自体は１から完全に自作をすることになった。実はこの時点でちょっと心折れかけたのは内緒である。</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<h1><span style='font-family:"ＭＳ ゴシック";mso-ascii-font-family:Arial;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"ＭＳ ゴシック";mso-fareast-theme-font:major-fareast;
+mso-hansi-font-family:Arial;mso-hansi-theme-font:major-latin'>順風満帆なプログラミング</span></h1>
+
+<p class=MsoNormal><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:Century;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>いざ、果てしないプログラミングの荒野へ・・・と考えながら、とりあえず参考書〔１〕をめくり、自分が今やりたいことを考え、参考書からそれに近い、使えるものを使っていくの繰り返しではあったが、それほど詰まることなく、スラスラとコードがかけていった。友達のアイデアも取り入れていきながら、大きな問題もなく、ゲームが完成までにはさほど時間を要さなかった。</span></p>
+
+<h1><span style='font-family:"ＭＳ ゴシック";mso-ascii-font-family:Arial;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"ＭＳ ゴシック";mso-fareast-theme-font:major-fareast;
+mso-hansi-font-family:Arial;mso-hansi-theme-font:major-latin'>致命的な欠点と対処</span></h1>
+
+<p class=MsoNormal><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:Century;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>ゲームが完成したので、友達とやってみる。わりといいゲームだなーと自画自賛していたのだが、やればやるほど致命的な欠点が見えてきた。地味なのだ。致命的に地味なのだ。色も変わらなければ、音も何もない。背景を凝ってるわけでもないし、派手な動きもない。こりゃいかんと考えた私は、ＢＧＭとＳＥを入れることを決意する。しかし、音源はないし、上の参考書には何も書いてない。ここで必殺のインターネットの登場である。著作権フリーの音源サイト〔</span><span
+lang=EN-US>URL2</span><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:
+Century;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:
+minor-latin'>〕と音楽挿入の丁寧なサイト〔</span><span lang=EN-US>URL3</span><span
+style='font-family:"ＭＳ 明朝";mso-ascii-font-family:Century;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>〕のおかげで、無事</span><span
+lang=EN-US>BGM</span><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:
+Century;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:
+minor-latin'>と</span><span lang=EN-US>SE</span><span style='font-family:"ＭＳ 明朝";
+mso-ascii-font-family:Century;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Century;
+mso-hansi-theme-font:minor-latin'>を入れることに成功。少し華やかになった</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=496
+ style='width:496.15pt;margin-left:-28.6pt;border-collapse:collapse;border:
+ none;mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0mm 5.4pt 0mm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=215 valign=top style='width:215.1pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>BGM,SE</span><span style='font-family:
+  "ＭＳ 明朝";mso-ascii-font-family:Century;mso-ascii-theme-font:minor-latin;
+  mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;
+  mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>挿入時に参考にしたコード</span></p>
+  </td>
+  <td width=281 valign=top style='width:281.05pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:
+  Century;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";
+  mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Century;
+  mso-hansi-theme-font:minor-latin'>使用時のコード</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=215 valign=top style='width:215.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'>import <span
+  class=SpellE>ddf.minim</span>.*;<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'>Minim <span
+  class=SpellE>minim</span>;<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span lang=EN-US style='font-size:9.0pt'>AudioPlayer</span></span><span
+  lang=EN-US style='font-size:9.0pt'> player;<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span lang=EN-US style='font-size:9.0pt'>AudioSample</span></span><span
+  lang=EN-US style='font-size:9.0pt'> kick;<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span lang=EN-US style='font-size:9.0pt'>AudioSample</span></span><span
+  lang=EN-US style='font-size:9.0pt'> snare;<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'>void setup() {<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'><span
+  style="mso-spacerun:yes">&nbsp; </span>minim = new Minim(this);<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'><span
+  style="mso-spacerun:yes">&nbsp; </span>player = <span class=SpellE>minim.loadFile</span>(&quot;URL</span><span
+  style='font-size:9.0pt;font-family:"ＭＳ 明朝";mso-ascii-font-family:Century;
+  mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:
+  minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>略</span><span
+  lang=EN-US style='font-size:9.0pt'>&quot;, 2048);<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'><span
+  style="mso-spacerun:yes">&nbsp; </span><span class=SpellE>player.play</span>();
+  //</span><span style='font-size:9.0pt;font-family:"ＭＳ 明朝";mso-ascii-font-family:
+  Century;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";
+  mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Century;
+  mso-hansi-theme-font:minor-latin'>再生</span><span lang=EN-US style='font-size:
+  9.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'><span
+  style="mso-spacerun:yes">&nbsp; </span>kick = <span class=SpellE>minim.loadSample</span>(&quot;kick.wav&quot;,
+  2048);<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'><span
+  style="mso-spacerun:yes">&nbsp; </span>snare = <span class=SpellE>minim.loadSample</span>(&quot;snare.wav&quot;,
+  2048);<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'>}<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'>}<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'>void draw() {<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'>}<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'>void stop() {<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'><span
+  style="mso-spacerun:yes">&nbsp; </span><span class=SpellE>player.close</span>();<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'><span
+  style="mso-spacerun:yes">&nbsp; </span><span class=SpellE>minim.stop</span>();<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'><span
+  style="mso-spacerun:yes">&nbsp; </span><span class=SpellE>super.stop</span>();<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'>}<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=281 valign=top style='width:281.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='font-size:9.0pt'>import <span class=SpellE>ddf.minim</span>.*;<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='font-size:9.0pt'>Minim <span class=SpellE>minim</span>;<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span class=SpellE><span
+  lang=EN-US style='font-size:9.0pt'>AudioSample</span></span><span lang=EN-US
+  style='font-size:9.0pt'> <span class=SpellE>shootSuccess</span>;<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span class=SpellE><span
+  lang=EN-US style='font-size:9.0pt'>AudioSample</span></span><span lang=EN-US
+  style='font-size:9.0pt'> <span class=SpellE>shootFail</span>;<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span class=SpellE><span
+  lang=EN-US style='font-size:9.0pt'>AudioPlayer</span></span><span lang=EN-US
+  style='font-size:9.0pt'> BGM;<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='font-size:9.0pt'>void setup() {<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span style='font-size:9.0pt;
+  font-family:"ＭＳ 明朝";mso-ascii-font-family:Century;mso-ascii-theme-font:minor-latin;
+  mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;
+  mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>（ゲームの部分のため略）</span><span
+  lang=EN-US style='font-size:9.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='font-size:9.0pt'>minim = new Minim(this);<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span class=SpellE><span
+  lang=EN-US style='font-size:9.0pt'>shootSuccess</span></span><span
+  lang=EN-US style='font-size:9.0pt'> = <span class=SpellE>minim.loadSample</span>(&quot;shootSuccess.mp3&quot;,
+  2048);<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span class=SpellE><span
+  lang=EN-US style='font-size:9.0pt'>shootFail</span></span><span lang=EN-US
+  style='font-size:9.0pt'> = <span class=SpellE>minim.loadSample</span>(&quot;shootFail.mp3&quot;,
+  2048);<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='font-size:9.0pt'>BGM = <span class=SpellE>minim.loadFile</span>(&quot;BGM.mp3&quot;,
+  2048);<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span class=SpellE><span
+  lang=EN-US style='font-size:9.0pt'>BGM.play</span></span><span lang=EN-US
+  style='font-size:9.0pt'>();<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='font-size:9.0pt'>}<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='font-size:9.0pt'>void draw() {<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span style='font-size:9.0pt;
+  font-family:"ＭＳ 明朝";mso-ascii-font-family:Century;mso-ascii-theme-font:minor-latin;
+  mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;
+  mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>（ゲーム部分略）</span><span
+  lang=EN-US style='font-size:9.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='font-size:9.0pt'>if (<span class=SpellE>mousePressed</span>) {<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span style='font-size:9.0pt;
+  font-family:"ＭＳ 明朝";mso-ascii-font-family:Century;mso-ascii-theme-font:minor-latin;
+  mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;
+  mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>（ゲーム部分略）</span><span
+  lang=EN-US style='font-size:9.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='font-size:9.0pt'>if (d&gt;ds) {<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span style='font-size:9.0pt;
+  font-family:"ＭＳ 明朝";mso-ascii-font-family:Century;mso-ascii-theme-font:minor-latin;
+  mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;
+  mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>（ゲーム部分略）</span><span
+  lang=EN-US style='font-size:9.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span class=SpellE><span
+  lang=EN-US style='font-size:9.0pt'>shootFail.trigger</span></span><span
+  lang=EN-US style='font-size:9.0pt'>();<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='font-size:9.0pt'>}if (d&lt;ds) {<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span style='font-size:9.0pt;
+  font-family:"ＭＳ 明朝";mso-ascii-font-family:Century;mso-ascii-theme-font:minor-latin;
+  mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;
+  mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>（ゲーム部分略）</span><span
+  lang=EN-US style='font-size:9.0pt'><o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span class=SpellE><span
+  lang=EN-US style='font-size:9.0pt'>shootSuccess.trigger</span></span><span
+  lang=EN-US style='font-size:9.0pt'>();<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='font-size:9.0pt'>}<o:p></o:p></span></p>
+  <p class=MsoNormal style='word-break:break-all'><span lang=EN-US
+  style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<h1><span style='font-family:"ＭＳ ゴシック";mso-ascii-font-family:Arial;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"ＭＳ ゴシック";mso-fareast-theme-font:major-fareast;
+mso-hansi-font-family:Arial;mso-hansi-theme-font:major-latin'>総評</span></h1>
+
+<p class=MsoNormal><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:Century;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>正直、完全な自作にしてはうまいこと動いてくれたと思っている。自作をしたことによって、本当に色々な知識を（主に参考書から）吸収できて、本当に良かったと思っている。まだまだプログラミングをしたいなと思えるほど面白いものでした。</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<h1><span style='font-family:"ＭＳ ゴシック";mso-ascii-font-family:Arial;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:"ＭＳ ゴシック";mso-fareast-theme-font:major-fareast;
+mso-hansi-font-family:Arial;mso-hansi-theme-font:major-latin'>引用</span></h1>
+
+<p class=MsoNormal><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:Century;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>文献〔１〕：</span><span
+lang=EN-US>Casey <span class=SpellE>Reas</span>(</span><span style='font-family:
+"ＭＳ 明朝";mso-ascii-font-family:Century;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>著</span><span
+lang=EN-US>), Ben Fry(</span><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:
+Century;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:
+minor-latin'>著</span><span lang=EN-US>), </span><span style='font-family:"ＭＳ 明朝";
+mso-ascii-font-family:Century;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Century;
+mso-hansi-theme-font:minor-latin'>船田</span> <span style='font-family:"ＭＳ 明朝";
+mso-ascii-font-family:Century;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Century;
+mso-hansi-theme-font:minor-latin'>巧</span><span lang=EN-US>(</span><span
+style='font-family:"ＭＳ 明朝";mso-ascii-font-family:Century;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>翻訳</span><span
+lang=EN-US>),</span><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:
+Century;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:
+minor-latin'>『</span><span lang=EN-US>processing</span><span style='font-family:
+"ＭＳ 明朝";mso-ascii-font-family:Century;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;
+mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>をはじめよう』</span><span
+lang=EN-US>(Make: PROJECTS,2011/10/22)</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:Century;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>〔</span><span
+lang=EN-US>URL</span><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:
+Century;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:
+minor-latin'>１〕：</span><span lang=EN-US>http://www.albinoblacksheep.com/flash/shoot</span></p>
+
+<p class=MsoNormal><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:Century;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>〔</span><span
+lang=EN-US>URL</span><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:
+Century;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:
+minor-latin'>２〕：</span><span lang=EN-US>http://dova-s.jp/</span></p>
+
+<p class=MsoNormal><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:Century;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:
+minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin'>〔</span><span
+lang=EN-US>URL</span><span style='font-family:"ＭＳ 明朝";mso-ascii-font-family:
+Century;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"ＭＳ 明朝";
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Century;mso-hansi-theme-font:
+minor-latin'>３〕：</span><span lang=EN-US>http://www.d-improvement.jp/learning/processing/2010-b/10.html</span></p>
+
+</div>
+
+</body>
+
+</html>

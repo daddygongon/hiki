@@ -1,0 +1,175 @@
+void setup(){
+  size(500,500);
+  frameRate(50);
+}
+
+void draw(){
+ background(255);
+  fill(255,255,0);
+  noStroke();
+  rect(0,0,40,40);
+  fill(255,0,255);
+  noStroke();
+  rect(440,460,490,400);
+  fill(200,100,156);
+  stroke(0);
+ line(0,40,470,40); 
+ line(470,40,470,60);
+ line(470,60,15,60);
+ line(500,320,30,320);
+ line(15,60,15,500);
+ line(30,320,30,490);
+ line(430,500,430,330);
+line(430,330,460,330);
+line(470,330,500,330);
+ line(460,330,460,460);
+ line(470,330,470,460);
+fill(178,29,99);
+rect(15,60,30,200);
+rect(100,70,15,250);
+rect(150,60,15,250);
+rect(200,70,15,250);
+rect(250,60,15,250);
+rect(300,60,15,250);
+rect(350,70,15,250);
+rect(400,60,15,250);
+rect(250,330,170,150);
+if(mousePressed){
+  noStroke();
+  smooth();
+  fill(100,200,0);
+ ellipse(mouseX,mouseY,5,5);
+} else{
+  ellipse(30,30,5,5);
+}
+
+ if(mousePressed&&mouseY>500){
+   noLoop();
+     fill(100,255,255);
+   textSize(50);
+  text("GAMEOVER",100,250); 
+ }
+   if(mousePressed&&mouseY<1){
+     noLoop();
+    fill(100,255,255);
+     textSize(50);
+  text("GAMEOVER",100,250);
+ }
+   if(mousePressed&&mouseX>499){
+     noLoop();
+      fill(100,255,255);
+  textSize(50);
+  text("GAMEOVER",100,250);
+ }
+   if(mousePressed&&mouseX<16&&mouseY>61){
+     noLoop();
+     fill(100,255,255);
+     textSize(50);
+  text("GAMEOVER",100,250);
+ }
+   if(mousePressed&&mouseY<61&&mouseY>39&&mouseX<471){
+   noLoop();
+   fill(100,255,255);
+     textSize(50);
+  text("GAMEOVER",100,250);
+ }
+   if(mousePressed&&mouseX>30&&mouseY>318&&mouseY<325){
+      noLoop();
+     fill(100,255,255);
+     textSize(50);
+  text("GAMEOVER",100,250);
+ }
+  if(mousePressed&&mouseX>25&&mouseX<34&&mouseY>318&&mouseY<493){
+     noLoop();
+     fill(100,255,255);
+     textSize(50);
+  text("GAMEOVER",100,250);
+ }
+ if(mousePressed&&mouseX>426&&mouseX<434&&mouseY>327&&mouseY<500){
+     noLoop();
+     fill(100,255,255);
+     textSize(50);
+  text("GAMEOVER",100,250);
+ }
+ if(mousePressed&&mouseX>426&mouseX<464&&mouseY>326&&mouseY<462){
+     noLoop();
+     fill(100,255,255);
+     textSize(50);
+  text("GAMEOVER",100,250);
+ }
+ if(mousePressed&&mouseX>468&&mouseY>326&&mouseY<462){
+     noLoop();
+     fill(100,255,255);
+     textSize(50);
+  text("GAMEOVER",100,250);
+ }
+
+ if(mousePressed&&mouseX>440&&mouseY>460){
+     noLoop();
+     fill(100,255,255);
+     textSize(60);
+  text("GAMECLEAR",50,250);
+ }
+ 
+ 
+ 
+  if(mousePressed&&mouseX<45&&mouseY>60&&mouseY<260){
+     noLoop();
+     fill(100,255,255);
+     textSize(50);
+  text("GAMEOVER",100,250);
+ }
+  if(mousePressed&&mouseX>150&&mouseX<165&&mouseY>60&&mouseY<315){
+     noLoop();
+     fill(100,255,255);
+     textSize(50);
+  text("GAMEOVER",100,250);
+ }
+  if(mousePressed&&mouseX>250&&mouseX<265&&mouseY>60&&mouseY<315){
+     noLoop();
+     fill(100,255,255);
+     textSize(50);
+  text("GAMEOVER",100,250);
+ }
+  if(mousePressed&&mouseX>300&&mouseX<315&&mouseY>60&&mouseY<315){
+     noLoop();
+     fill(100,255,255);
+     textSize(50);
+  text("GAMEOVER",100,250);
+ }
+  if(mousePressed&&mouseX>400&&mouseX<415&&mouseY>60&&mouseY<315){
+     noLoop();
+     fill(100,255,255);
+     textSize(50);
+  text("GAMEOVER",100,250);
+ }
+  if(mousePressed&&mouseX>100&&mouseX<115&&mouseY>70&&mouseY<330){
+     noLoop();
+     fill(100,255,255);
+     textSize(50);
+  text("GAMEOVER",100,250);
+ }
+  if(mousePressed&&mouseX>200&&mouseX<215&&mouseY>70&&mouseY<330){
+     noLoop();
+     fill(100,255,255);
+     textSize(50);
+  text("GAMEOVER",100,250);
+ }
+  if(mousePressed&&mouseX>350&&mouseX<365&&mouseY>70&&mouseY<330){
+     noLoop();
+     fill(100,255,255);
+     textSize(50);
+  text("GAMEOVER",100,250);
+ }
+  if(mousePressed&&mouseX>250&&mouseX<420&mouseY>330&&mouseY<480){
+     noLoop();
+     fill(100,255,255);
+     textSize(50);
+  text("GAMEOVER",100,250);
+ }
+ 
+ 
+ }
+ void keyPressed(){
+   loop();
+ }

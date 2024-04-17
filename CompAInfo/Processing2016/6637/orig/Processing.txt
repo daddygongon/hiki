@@ -1,0 +1,23 @@
+名前 : 矢羽田　葵 ヤハタ　アオイ(YAHATA AOI) (ekm22106)
+課題レポート : Processingの課題
+提出日 : 2016年6月23日 0時51分31秒 JST
+現在の成績 : 17 
+
+送信フィールド:
+この課題レポートへの学生の送信文データはありません。
+
+コメント :
+processing入門（http://www.cp.cmc.osaka-u.ac.jp/~kikuchi/kougo/simulation2009/processing0.html）
+
+processing 学習ノート（www.d-improvement.jp/learning/processing/）
+
+processingを始めよう　CaseyReas,BenFry著　船田巧訳）
+
+を参考にして作りました。
+
+イメージはライブ会場の照明です。基本的に真っ暗の中でチカチカ派手に光ってる照明のイメージなのですが、クリックすることで背景が白くなります。これはライブ終了時の一気に会場の電気が点いた中、まだ照明が残っている状態で、ライブ終わりの少し寂しい感じを表しています。
+
+ファイル :
+	元のファイル名 : pro_624_1.pde
+	ファイル名 : Processingの課題_ekm22106_結果_2016-06-23-00-51-31_pro_624_1.pde
+

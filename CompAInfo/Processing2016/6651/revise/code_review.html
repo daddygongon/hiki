@@ -1,0 +1,991 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:mv="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta name=表題 content="">
+<meta name=キーワード content="">
+<meta http-equiv=Content-Type content="text/html; charset=csShiftJIS">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="code_review.files/filelist.xml">
+<link rel=Edit-Time-Data href="code_review.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v:* {behavior:url(#default#VML);}
+o:* {behavior:url(#default#VML);}
+w:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>岡北大誠</o:Author>
+  <o:LastAuthor>西谷 滋人</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>30</o:TotalTime>
+  <o:Created>2016-08-08T01:50:00Z</o:Created>
+  <o:LastSaved>2016-08-08T01:50:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>291</o:Words>
+  <o:Characters>1663</o:Characters>
+  <o:Lines>13</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>1951</o:CharactersWithSpaces>
+  <o:Version>14.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="code_review.files/themedata.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>JA</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:NoLineBreaksAfter Lang="JA">$([{￡\‘“〈《「『【〔＄（［｛｢&#65505;￥</w:NoLineBreaksAfter>
+  <w:NoLineBreaksBefore Lang="JA">!%),.:;?]}￠°’”‰′″℃、。々〉》」』】〕゛゜ゝゞ・ヽヾ！％），．：；？］｝｡｣､･ﾞﾟ&#65504;</w:NoLineBreaksBefore>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="276">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 1"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 2"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 3"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 4"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 5"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 6"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 7"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 8"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 9"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:游明朝;
+	mso-font-alt:"メイリオ ボールド";
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147482905 717749503 18 0 131231 0;}
+@font-face
+	{font-family:"@游明朝";
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147482905 717749503 18 0 131231 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"游明朝","serif";
+	mso-ascii-font-family:游明朝;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:游明朝;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:游明朝;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.5pt;
+	mso-ansi-font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"游明朝","serif";
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:99.25pt 30.0mm 30.0mm 30.0mm;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:18.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:標準の表;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0mm 5.4pt 0mm 5.4pt;
+	mso-para-margin:0mm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"游明朝","serif";
+	mso-ascii-font-family:游明朝;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:游明朝;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:游明朝;
+	mso-hansi-theme-font:minor-latin;
+	mso-font-kerning:1.0pt;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1030">
+  <v:textbox inset="5.85pt,.7pt,5.85pt,.7pt"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+  <o:rules v:ext="edit">
+   <o:r id="V:Rule1" type="callout" idref="#_x5186__x5f62__x5439__x304d__x51fa__x3057__x0020_4"/>
+  </o:rules>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=JA style='tab-interval:42.0pt;text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:18.0pt'>
+
+<p class=MsoNormal><span lang=EN-US>// sketch_160608a_PK.pde</span></p>
+
+<p class=MsoNormal><span lang=EN-US>// Source code is available under the
+Creative Commons Attribution-<span class=SpellE>ShareAlike</span> License</span></p>
+
+<p class=MsoNormal><span lang=EN-US>// cc by Taisei. <span class=SpellE>Okakita</span>,
+2016 </span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span lang=EN-US>int</span></span><span
+lang=EN-US> x=500, y=700, speedy=0;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>float <span class=SpellE>speedx</span>=0;</span>　　<span
+lang=EN-US>random</span>変数を使うために<span lang=EN-US>float</span>にしました。</p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>void setup() {</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>size(1000, 1000);</span></p>
+
+<p class=MsoNormal><span lang=EN-US>} </span></p>
+
+<p class=MsoNormal><span lang=EN-US>void draw() {</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>background(0, 255, 0);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span><span class=SpellE>noFill</span>();</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>stroke(255);//goal</span></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shapetype id="_x0000_t88" coordsize="21600,21600"
+ o:spt="88" adj="1800,10800" path="m0,0qx10800@0l10800@2qy21600@11,10800@3l10800@1qy0,21600e"
+ filled="f">
+ <v:formulas>
+  <v:f eqn="val #0"/>
+  <v:f eqn="sum 21600 0 #0"/>
+  <v:f eqn="sum #1 0 #0"/>
+  <v:f eqn="sum #1 #0 0"/>
+  <v:f eqn="prod #0 9598 32768"/>
+  <v:f eqn="sum 21600 0 @4"/>
+  <v:f eqn="sum 21600 0 #1"/>
+  <v:f eqn="min #1 @6"/>
+  <v:f eqn="prod @7 1 2"/>
+  <v:f eqn="prod #0 2 1"/>
+  <v:f eqn="sum 21600 0 @9"/>
+  <v:f eqn="val #1"/>
+ </v:formulas>
+ <v:path arrowok="t" o:connecttype="custom" o:connectlocs="0,0;21600,@11;0,21600"
+  textboxrect="0,@4,7637,@5"/>
+ <v:handles>
+  <v:h position="center,#0" yrange="0,@8"/>
+  <v:h position="bottomRight,#1" yrange="@9,@10"/>
+ </v:handles>
+</v:shapetype><v:shape id="_x53f3__x4e2d__x304b__x3063__x3053__x0020_1" o:spid="_x0000_s1029"
+ type="#_x0000_t88" style='position:absolute;left:0;text-align:left;
+ margin-left:131.55pt;margin-top:5.15pt;width:22.2pt;height:115.8pt;z-index:251659264;
+ visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+ mso-height-percent:0;mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;
+ mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:0;
+ mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+ mso-position-vertical:absolute;mso-position-vertical-relative:text;
+ mso-width-percent:0;mso-height-percent:0;mso-width-relative:margin;
+ mso-height-relative:margin;v-text-anchor:middle' o:gfxdata="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
+ZXYueG1sUEsFBgAAAAAEAAQA8wAAAPoFAAAAAA==
+" adj="1240" strokecolor="black [3200]" strokeweight=".5pt">
+ <v:stroke joinstyle="miter"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:251659264;left:0px;margin-left:128px;margin-top:1px;
+width:34px;height:128px'><img width=34 height=128
+src="code_review.files/image001.png" v:shapes="_x53f3__x4e2d__x304b__x3063__x3053__x0020_1"></span><![endif]><span
+lang=EN-US><span style="mso-spacerun:yes">&nbsp; </span><span class=SpellE>strokeWeight</span>(20);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span><span class=SpellE>strokeJoin</span>(MITER);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span><span class=SpellE>rect</span>(250, 100, 500, 200);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>line(0, 300, 1000, 300); </span>　　　　コートのラインを自分で計算して書くのが大変だった。</p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>line(150, 300, 100, 600);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>line(100, 600, 900, 600);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;</span><span
+style="mso-spacerun:yes">&nbsp;</span>line(900, 600, 850, 300);</span>　　　</p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x53f3__x4e2d__x304b__x3063__x3053__x0020_2"
+ o:spid="_x0000_s1028" type="#_x0000_t88" style='position:absolute;left:0;
+ text-align:left;margin-left:184.95pt;margin-top:.35pt;width:20.4pt;height:114.6pt;
+ z-index:251660288;visibility:visible;mso-wrap-style:square;
+ mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+ mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+ mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+ mso-width-relative:margin;mso-height-relative:margin;v-text-anchor:middle'
+ o:gfxdata="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
+ZXYueG1sUEsFBgAAAAAEAAQA8wAAAPoFAAAAAA==
+" adj="999,8878" strokecolor="black [3200]" strokeweight=".5pt">
+ <v:stroke joinstyle="miter"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+relative;z-index:251660288'><span style='left:0px;position:absolute;left:181px;
+top:-4px;width:32px;height:127px'><img width=32 height=127
+src="code_review.files/image002.png" v:shapes="_x53f3__x4e2d__x304b__x3063__x3053__x0020_2"></span></span><![endif]><span
+lang=EN-US><span style="mso-spacerun:yes">&nbsp; </span><span class=SpellE>strokeWeight</span>(5);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>for (<span class=SpellE>int</span> <span class=SpellE>i</span>=300; <span
+class=SpellE>i</span>&lt;=700; <span class=SpellE>i</span>+=50) {</span></p>
+
+<p class=MsoNormal style='margin-left:10.5pt;text-indent:-10.5pt;mso-char-indent-count:
+-1.0'><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;
+</span>line(<span class=SpellE>i</span>, 100, <span class=SpellE>i</span>,
+300);</span>　　　　　　　　　　ゴールネットを変数を使って楽に書くことが</p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>}</span>　　　　　　　　　　　　　　　　　　　できた。</p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>for (<span class=SpellE>int</span> j=150; j&lt;=250; j+=50) {</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>line(250, j, 750, j );</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>}</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>fill(255, 50, 50);//ball</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span><span class=SpellE>noStroke</span>();</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>x+=<span class=SpellE>speedx</span>;</span>　　　　</p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>y-=speedy;</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>ellipse(x, y, 60, 60);</span></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x53f3__x4e2d__x304b__x3063__x3053__x0020_3"
+ o:spid="_x0000_s1027" type="#_x0000_t88" style='position:absolute;left:0;
+ text-align:left;margin-left:227.55pt;margin-top:-.8pt;width:32.4pt;height:300.6pt;
+ z-index:251661312;visibility:visible;mso-wrap-style:square;
+ mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+ mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+ mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+ mso-width-relative:margin;mso-height-relative:margin;v-text-anchor:middle'
+ o:gfxdata="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
+" adj="2350,8472" strokecolor="black [3200]" strokeweight=".5pt">
+ <v:stroke joinstyle="miter"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+relative;z-index:251661312'><span style='left:0px;position:absolute;left:224px;
+top:-5px;width:44px;height:313px'><img width=44 height=313
+src="code_review.files/image003.png" v:shapes="_x53f3__x4e2d__x304b__x3063__x3053__x0020_3"></span></span><![endif]><span
+lang=EN-US><span style="mso-spacerun:yes">&nbsp; </span>if (y==140) {</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>if
+(x&gt;=250&amp;&amp;x&lt;=750) {</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>fill(0);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>textAlign</span>(CENTER);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>textSize</span>(200);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>text(&quot;GOAL!!&quot;, 500, 500);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>textSize</span>(80);</span>　　　　　　　　　　　　　　　　　ボールがゴールの中または外に</p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>text(&quot;Please push some key&quot;, 500, 700);</span>　　　　　行った時で表示されるテキストを</p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>} else {</span>　　　　　　　　　　　　　　　　　　　　　変えてみた。</p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>fill(0);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>textSize</span>(170);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>textAlign</span>(CENTER);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>text(&quot;DON'T
+MIND</span>￥<span lang=EN-US>n^_^&quot;, 500, 500);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>textSize</span>(80);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>text(&quot;Please push
+some key&quot;, 500, 600);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>}</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span><span class=SpellE>noLoop</span>();</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>}</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>fill(0);//kicker</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>stroke(0);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>//for (<span class=SpellE>mouseY</span>&gt;700)</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>ellipse(<span class=SpellE>mouseX</span>, mouseY-30, 50, 50); </span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>ellipse(<span class=SpellE>mouseX</span>, mouseY+15, 40, 60);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span><span class=SpellE>strokeWeight</span>(10);</span>　　　　　　　　　　　　キッカーの腕や足の位置を調節するのに</p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>line(<span class=SpellE>mouseX</span>, mouseY-10, mouseX-30, mouseY+30);</span>　　　手間取った。</p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>line(<span class=SpellE>mouseX</span>, mouseY-10, mouseX+30, mouseY+30);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>line(mouseX-5, mouseY+20, mouseX-15, mouseY+70);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>line(mouseX+5, mouseY+20, mouseX+15, mouseY+70);</span></p>
+
+<p class=MsoNormal><span lang=EN-US>}</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>void <span class=SpellE>keyPressed</span>()
+{</span>　　キーボードを押すとやり直しができるようにした。</p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>loop();</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>x=500;</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>y=700;</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>speedy=0;</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span><span class=SpellE>speedx</span>=0;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>}</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>void <span class=SpellE>mousePressed</span>()
+{</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>if (<span class=SpellE>mouseX</span>&gt;=470&amp;&amp;<span
+class=SpellE>mouseX</span>&lt;=530&amp;&amp;<span class=SpellE>mouseY</span>&gt;=670&amp;&amp;<span
+class=SpellE>mouseY</span>&lt;=730) {</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>speedy = 8;</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span><span class=SpellE>speedx</span>
+= random(-5, 5);</span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style="mso-spacerun:yes">&nbsp;
+</span>}</span></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shapetype id="_x0000_t63" coordsize="21600,21600"
+ o:spt="63" adj="1350,25920" path="wr0,,21600,21600@15@16@17@18l@21@22xe">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="val #0"/>
+  <v:f eqn="val #1"/>
+  <v:f eqn="sum 10800 0 #0"/>
+  <v:f eqn="sum 10800 0 #1"/>
+  <v:f eqn="atan2 @2 @3"/>
+  <v:f eqn="sumangle @4 11 0"/>
+  <v:f eqn="sumangle @4 0 11"/>
+  <v:f eqn="cos 10800 @4"/>
+  <v:f eqn="sin 10800 @4"/>
+  <v:f eqn="cos 10800 @5"/>
+  <v:f eqn="sin 10800 @5"/>
+  <v:f eqn="cos 10800 @6"/>
+  <v:f eqn="sin 10800 @6"/>
+  <v:f eqn="sum 10800 0 @7"/>
+  <v:f eqn="sum 10800 0 @8"/>
+  <v:f eqn="sum 10800 0 @9"/>
+  <v:f eqn="sum 10800 0 @10"/>
+  <v:f eqn="sum 10800 0 @11"/>
+  <v:f eqn="sum 10800 0 @12"/>
+  <v:f eqn="mod @2 @3 0"/>
+  <v:f eqn="sum @19 0 10800"/>
+  <v:f eqn="if @20 #0 @13"/>
+  <v:f eqn="if @20 #1 @14"/>
+ </v:formulas>
+ <v:path o:connecttype="custom" o:connectlocs="10800,0;3163,3163;0,10800;3163,18437;10800,21600;18437,18437;21600,10800;18437,3163;@21,@22"
+  textboxrect="3163,3163,18437,18437"/>
+ <v:handles>
+  <v:h position="#0,#1"/>
+ </v:handles>
+</v:shapetype><v:shape id="_x5186__x5f62__x5439__x304d__x51fa__x3057__x0020_4"
+ o:spid="_x0000_s1026" type="#_x0000_t63" style='position:absolute;left:0;
+ text-align:left;margin-left:105.75pt;margin-top:3.35pt;width:285.6pt;height:82.8pt;
+ z-index:251662336;visibility:visible;mso-wrap-style:square;
+ mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+ mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+ mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+ mso-width-relative:margin;mso-height-relative:margin;v-text-anchor:middle'
+ o:gfxdata="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
+" adj="3150,-4993" fillcolor="white [3212]" strokecolor="black [3213]"
+ strokeweight="1pt">
+ <v:textbox>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoNormal align=center style='text-align:center'><span
+    style='color:black;mso-themecolor:text1'>マウスで特定の位置をクリックすると変数ｘがランダムで変化して色んな方向にとんでいくようにした。<span
+    lang=EN-US><o:p></o:p></span></span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+relative;z-index:251662336'><span style='left:0px;position:absolute;left:102px;
+top:-20px;width:297px;height:114px'><img width=297 height=114
+src="code_review.files/image004.png"
+alt="円形吹き出し: マウスで特定の位置をクリックすると変数ｘがランダムで変化して色んな方向にとんでいくようにした。" v:shapes="_x5186__x5f62__x5439__x304d__x51fa__x3057__x0020_4"></span></span><![endif]><span
+lang=EN-US>}</span></p>
+
+</div>
+
+</body>
+
+</html>

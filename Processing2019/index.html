@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="jp" xml:lang="jp">
+<head>
+<!-- 2019-07-31 水 17:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>2019  Processing 課題</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="関西学院大，理工学部情報科学科，コンピュータ演習9クラス" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/readtheorg/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">2019  Processing 課題</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org54ad0c1">1. 3dぽいescape game</a></li>
+<li><a href="#orgc46352d">2. 2d fps game</a></li>
+<li><a href="#orge859d81">3. 星になる多角形</a></li>
+<li><a href="#orgd32ff65">4. パンをくわえてゾンビと恋-女の子とぶつかれるか</a></li>
+<li><a href="#org29b1042">5. アニメでレーザを守る</a></li>
+<li><a href="#orgf483672">6. offsideつきサッカーゲーム</a></li>
+<li><a href="#org0c6eb2b">7. 色が変わる桜が降ってくる三角形</a></li>
+<li><a href="#org6570b5c">8. 円周率の表示</a></li>
+<li><a href="#org81aac6f">9. 音を視覚化する</a></li>
+<li><a href="#org6722c3f">10. ハートの花火</a></li>
+<li><a href="#org907c08b">11. 下からも攻めてくる球拾い</a></li>
+<li><a href="#org146604b">12. ホンダの人形逃げゲー横</a></li>
+<li><a href="#orgce402d8">13. 得点が表示されないカーソルとまとfpsゲーム，，．</a></li>
+<li><a href="#org0c434f3">14. イライラ棒</a></li>
+<li><a href="#org0fcfeec">15. 見たことあるアンパンマンゲーム</a></li>
+<li><a href="#org336db84">16. 目の動き</a></li>
+<li><a href="#org1b3732c">17. イライラ棒</a></li>
+<li><a href="#orgf98f4a5">18. テニスのミニゲーム</a></li>
+<li><a href="#orga8456b6">19. 球拾い</a></li>
+<li><a href="#org1335b27">20. 課題潰し</a></li>
+<li><a href="#org48f8bb4">21. 手動で動くあみだくじ</a></li>
+<li><a href="#org59449ec">22. 背景のみblock 崩し</a></li>
+<li><a href="#orgc8d27ae">23. 1秒ごとに色が変わる時計</a></li>
+<li><a href="#orgf5b5e3c">24. パックマン鬼ごっこ</a></li>
+<li><a href="#orgc4bf811">25. shooting game</a></li>
+<li><a href="#org37ce9e7">26. 球拾い</a></li>
+<li><a href="#org613c989">27. アナログ時計</a></li>
+<li><a href="#org67b6b93">28. bouncy hockey</a></li>
+<li><a href="#org17e9c94">29. 単なる逃げゲー</a></li>
+<li><a href="#orgee1b8b3">30. 色が変わる跳ね回る円盤</a></li>
+<li><a href="#orga630093">31. 球拾い</a></li>
+<li><a href="#org48c461b">32. 雨を降らせた</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org54ad0c1" class="outline-2">
+<h2 id="org54ad0c1"><span class="section-number-2">1</span> 3dぽいescape game</h2>
+<div class="outline-text-2" id="text-1">
+<dl class="org-dl">
+<dt>author</dt><dd>西谷　俊治</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/shunshunNi/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/shunshunNi/index.html</a></dd>
+<dt>raw_score</dt><dd>309.00</dd>
+<dt>github url</dt><dd><a href="https://github.com/shunshunNi/processing_templates">https://github.com/shunshunNi/processing_templates</a></dd>
+<dt>comment </dt><dd>面白いんですが，webでは動きません．githubから楽しんでください．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orgc46352d" class="outline-2">
+<h2 id="orgc46352d"><span class="section-number-2">2</span> 2d fps game</h2>
+<div class="outline-text-2" id="text-2">
+<dl class="org-dl">
+<dt>author</dt><dd>野田　麦</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/void-hoge/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/void-hoge/index.html</a></dd>
+<dt>raw_score</dt><dd>308.33</dd>
+<dt>github url</dt><dd><a href="https://github.com/void-hoge/processing_templates">https://github.com/void-hoge/processing_templates</a></dd>
+<dt>comment </dt><dd>面白いんですが，webでは動きません．githubから楽しんでください．むずいでっせ．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orge859d81" class="outline-2">
+<h2 id="orge859d81"><span class="section-number-2">3</span> 星になる多角形</h2>
+<div class="outline-text-2" id="text-3">
+<dl class="org-dl">
+<dt>author</dt><dd>志賀　光</dd>
+<dt>pde url</dt><dd></dd>
+
+<dt>raw_score</dt><dd>298.00</dd>
+<dt>github url</dt><dd></dd>
+
+<dt>comment </dt><dd></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orgd32ff65" class="outline-2">
+<h2 id="orgd32ff65"><span class="section-number-2">4</span> パンをくわえてゾンビと恋-女の子とぶつかれるか</h2>
+<div class="outline-text-2" id="text-4">
+<dl class="org-dl">
+<dt>author</dt><dd>高橋　翔太郎</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/olmigon/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/olmigon/index.html</a></dd>
+<dt>raw_score</dt><dd>297.00</dd>
+<dt>github url</dt><dd><a href="https://github.com/olmigon/processing_templates">https://github.com/olmigon/processing_templates</a></dd>
+<dt>comment </dt><dd>web版は早くてむずいです．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org29b1042" class="outline-2">
+<h2 id="org29b1042"><span class="section-number-2">5</span> アニメでレーザを守る</h2>
+<div class="outline-text-2" id="text-5">
+<dl class="org-dl">
+<dt>author</dt><dd>中村　亮介</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/NBAZUZU6/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/NBAZUZU6/index.html</a></dd>
+<dt>raw_score</dt><dd>296.00</dd>
+<dt>github url</dt><dd><a href="https://github.com/NBAZUZU6/processing_templates">https://github.com/NBAZUZU6/processing_templates</a></dd>
+<dt>comment </dt><dd>凝ってるんですよ．絵が．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orgf483672" class="outline-2">
+<h2 id="orgf483672"><span class="section-number-2">6</span> offsideつきサッカーゲーム</h2>
+<div class="outline-text-2" id="text-6">
+<dl class="org-dl">
+<dt>author</dt><dd>吉川　練</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/Rererenoren/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/Rererenoren/index.html</a></dd>
+<dt>raw_score</dt><dd>292.37</dd>
+<dt>github url</dt><dd><a href="https://github.com/Rererenoren/processing_templates">https://github.com/Rererenoren/processing_templates</a></dd>
+<dt>comment </dt><dd>デモがうまくて，喋りはめちゃ受けました．ゲームとしての操作性の悪さはネタのための仕込みと赦してやってください．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org0c6eb2b" class="outline-2">
+<h2 id="org0c6eb2b"><span class="section-number-2">7</span> 色が変わる桜が降ってくる三角形</h2>
+<div class="outline-text-2" id="text-7">
+<dl class="org-dl">
+<dt>author</dt><dd>米田　龍汰</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/</a> /index.html</dd>
+<dt>raw_score</dt><dd>292.10</dd>
+<dt>github url</dt><dd></dd>
+
+<dt>comment </dt><dd></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org6570b5c" class="outline-2">
+<h2 id="org6570b5c"><span class="section-number-2">8</span> 円周率の表示</h2>
+<div class="outline-text-2" id="text-8">
+<dl class="org-dl">
+<dt>author</dt><dd>野々瀬　光</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/TSUKASA2001/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/TSUKASA2001/index.html</a></dd>
+<dt>raw_score</dt><dd>291.00</dd>
+<dt>github url</dt><dd><a href="https://github.com/TSUKASA2001/processing_templates">https://github.com/TSUKASA2001/processing_templates</a></dd>
+<dt>comment </dt><dd>勉強になります．でも，Monte Carloって効率悪いよね．積分だと．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org81aac6f" class="outline-2">
+<h2 id="org81aac6f"><span class="section-number-2">9</span> 音を視覚化する</h2>
+<div class="outline-text-2" id="text-9">
+<dl class="org-dl">
+<dt>author</dt><dd>吉成　冬馬</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/tomatomato510/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/tomatomato510/index.html</a></dd>
+<dt>raw_score</dt><dd>290.33</dd>
+<dt>github url</dt><dd><a href="https://github.com/tomatomato510/processing_templates">https://github.com/tomatomato510/processing_templates</a></dd>
+<dt>comment </dt><dd>minimを使っているので，webでは動きません．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org6722c3f" class="outline-2">
+<h2 id="org6722c3f"><span class="section-number-2">10</span> ハートの花火</h2>
+<div class="outline-text-2" id="text-10">
+<dl class="org-dl">
+<dt>author</dt><dd>高見　瑠莉夏</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/lunchan/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/lunchan/index.html</a></dd>
+<dt>raw_score</dt><dd>289.93</dd>
+<dt>github url</dt><dd><a href="https://github.com/lunchan/processing_templates">https://github.com/lunchan/processing_templates</a></dd>
+<dt>comment </dt><dd>ハートが独創的なんですが，renderとか使っているのでwebでは動作しません．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org907c08b" class="outline-2">
+<h2 id="org907c08b"><span class="section-number-2">11</span> 下からも攻めてくる球拾い</h2>
+<div class="outline-text-2" id="text-11">
+<dl class="org-dl">
+<dt>author</dt><dd>羽根田　杏里</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/kiritanpoanchan/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/kiritanpoanchan/index.html</a></dd>
+<dt>raw_score</dt><dd>283.30</dd>
+<dt>github url</dt><dd><a href="https://github.com/kiritanpoanchan/processing_templates">https://github.com/kiritanpoanchan/processing_templates</a></dd>
+<dt>comment </dt><dd>ちょっと動きが悪いですが，意外と真剣にできます．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org146604b" class="outline-2">
+<h2 id="org146604b"><span class="section-number-2">12</span> ホンダの人形逃げゲー横</h2>
+<div class="outline-text-2" id="text-12">
+<dl class="org-dl">
+<dt>author</dt><dd>尾谷　翔</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/sho777/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/sho777/index.html</a></dd>
+<dt>raw_score</dt><dd>282.90</dd>
+<dt>github url</dt><dd><a href="https://github.com/sho777/processing_templates">https://github.com/sho777/processing_templates</a></dd>
+<dt>comment </dt><dd>ネタに近いんですが，クリックして，wとsで上下に逃げられます．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orgce402d8" class="outline-2">
+<h2 id="orgce402d8"><span class="section-number-2">13</span> 得点が表示されないカーソルとまとfpsゲーム，，．</h2>
+<div class="outline-text-2" id="text-13">
+<dl class="org-dl">
+<dt>author</dt><dd>足立　幸紀</dd>
+<dt>pde url</dt><dd></dd>
+
+<dt>raw_score</dt><dd>281.93</dd>
+<dt>github url</dt><dd></dd>
+
+<dt>comment </dt><dd></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org0c434f3" class="outline-2">
+<h2 id="org0c434f3"><span class="section-number-2">14</span> イライラ棒</h2>
+<div class="outline-text-2" id="text-14">
+<dl class="org-dl">
+<dt>author</dt><dd>山崎　夕菜</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/shiratakizzz/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/shiratakizzz/index.html</a></dd>
+<dt>raw_score</dt><dd>280.30</dd>
+<dt>github url</dt><dd><a href="https://github.com/shiratakizzz/processing_templates">https://github.com/shiratakizzz/processing_templates</a></dd>
+<dt>comment </dt><dd>えっとルールがよくわかっていません．申し訳ない．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org0fcfeec" class="outline-2">
+<h2 id="org0fcfeec"><span class="section-number-2">15</span> 見たことあるアンパンマンゲーム</h2>
+<div class="outline-text-2" id="text-15">
+<dl class="org-dl">
+<dt>author</dt><dd>山本　湧心</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/yuuushinnn/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/yuuushinnn/index.html</a></dd>
+<dt>raw_score</dt><dd>279.93</dd>
+<dt>github url</dt><dd><a href="https://github.com/yuuushinnn/processing_templates">https://github.com/yuuushinnn/processing_templates</a></dd>
+<dt>comment </dt><dd>クリックして，awszで動きます．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org336db84" class="outline-2">
+<h2 id="org336db84"><span class="section-number-2">16</span> 目の動き</h2>
+<div class="outline-text-2" id="text-16">
+<dl class="org-dl">
+<dt>author</dt><dd>岸田　星道</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/KUREMENSU/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/KUREMENSU/index.html</a></dd>
+<dt>raw_score</dt><dd>279.67</dd>
+<dt>github url</dt><dd><a href="https://github.com/KUREMENSU/processing_templates">https://github.com/KUREMENSU/processing_templates</a></dd>
+<dt>comment </dt><dd>まんまです．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org1b3732c" class="outline-2">
+<h2 id="org1b3732c"><span class="section-number-2">17</span> イライラ棒</h2>
+<div class="outline-text-2" id="text-17">
+<dl class="org-dl">
+<dt>author</dt><dd>酒井　すみれ</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/serina1249/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/serina1249/index.html</a></dd>
+<dt>raw_score</dt><dd>279.67</dd>
+<dt>github url</dt><dd><a href="https://github.com/serina1249/processing_templates">https://github.com/serina1249/processing_templates</a></dd>
+<dt>comment </dt><dd>イラっとします．でも逃げ道はあります．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orgf98f4a5" class="outline-2">
+<h2 id="orgf98f4a5"><span class="section-number-2">18</span> テニスのミニゲーム</h2>
+<div class="outline-text-2" id="text-18">
+<dl class="org-dl">
+<dt>author</dt><dd>吉次　亮</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/tsuguring/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/tsuguring/index.html</a></dd>
+<dt>raw_score</dt><dd>278.67</dd>
+<dt>github url</dt><dd><a href="https://github.com/tsuguring/processing_templates">https://github.com/tsuguring/processing_templates</a></dd>
+<dt>comment </dt><dd>まあまあなんですが，webでは早すぎてだめです．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orga8456b6" class="outline-2">
+<h2 id="orga8456b6"><span class="section-number-2">19</span> 球拾い</h2>
+<div class="outline-text-2" id="text-19">
+<dl class="org-dl">
+<dt>author</dt><dd>岡村　萌ヱ花</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/373Nasrudin/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/373Nasrudin/index.html</a></dd>
+<dt>raw_score</dt><dd>274.97</dd>
+<dt>github url</dt><dd><a href="https://github.com/373Nasrudin/processing_templates">https://github.com/373Nasrudin/processing_templates</a></dd>
+<dt>comment </dt><dd>とても簡単なゲームです．改良すればもっと面白くなるはずです．．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org1335b27" class="outline-2">
+<h2 id="org1335b27"><span class="section-number-2">20</span> 課題潰し</h2>
+<div class="outline-text-2" id="text-20">
+<dl class="org-dl">
+<dt>author</dt><dd>齋藤　優大</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/chaos0cryptograph/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/chaos0cryptograph/index.html</a></dd>
+<dt>raw_score</dt><dd>273.93</dd>
+<dt>github url</dt><dd><a href="https://github.com/chaos0cryptograph/processing_templates">https://github.com/chaos0cryptograph/processing_templates</a></dd>
+<dt>comment </dt><dd>課題画像がなく動きません．手配中です．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org48f8bb4" class="outline-2">
+<h2 id="org48f8bb4"><span class="section-number-2">21</span> 手動で動くあみだくじ</h2>
+<div class="outline-text-2" id="text-21">
+<dl class="org-dl">
+<dt>author</dt><dd>高森　洸希</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/koukitakamori817/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/koukitakamori817/index.html</a></dd>
+<dt>raw_score</dt><dd>272.97</dd>
+<dt>github url</dt><dd><a href="https://github.com/koukitakamori817/processing_templates">https://github.com/koukitakamori817/processing_templates</a></dd>
+<dt>comment </dt><dd>まんまです．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org59449ec" class="outline-2">
+<h2 id="org59449ec"><span class="section-number-2">22</span> 背景のみblock 崩し</h2>
+<div class="outline-text-2" id="text-22">
+<dl class="org-dl">
+<dt>author</dt><dd>加藤　潤</dd>
+<dt>pde url</dt><dd></dd>
+
+<dt>raw_score</dt><dd>272.00</dd>
+<dt>github url</dt><dd></dd>
+
+<dt>comment </dt><dd></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orgc8d27ae" class="outline-2">
+<h2 id="orgc8d27ae"><span class="section-number-2">23</span> 1秒ごとに色が変わる時計</h2>
+<div class="outline-text-2" id="text-23">
+<dl class="org-dl">
+<dt>author</dt><dd>舩本　直弥</dd>
+<dt>pde url</dt><dd></dd>
+
+<dt>raw_score</dt><dd>271.00</dd>
+<dt>github url</dt><dd></dd>
+
+<dt>comment </dt><dd></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orgf5b5e3c" class="outline-2">
+<h2 id="orgf5b5e3c"><span class="section-number-2">24</span> パックマン鬼ごっこ</h2>
+<div class="outline-text-2" id="text-24">
+<dl class="org-dl">
+<dt>author</dt><dd>岩井　未来</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/chocon-mickey/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/chocon-mickey/index.html</a></dd>
+<dt>raw_score</dt><dd>270.63</dd>
+<dt>github url</dt><dd><a href="https://github.com/chocon-mickey/processing_templates">https://github.com/chocon-mickey/processing_templates</a></dd>
+<dt>comment </dt><dd>ゲームではありません．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orgc4bf811" class="outline-2">
+<h2 id="orgc4bf811"><span class="section-number-2">25</span> shooting game</h2>
+<div class="outline-text-2" id="text-25">
+<dl class="org-dl">
+<dt>author</dt><dd>市田　竜也</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/ryuya777/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/ryuya777/index.html</a></dd>
+<dt>raw_score</dt><dd>270.27</dd>
+<dt>github url</dt><dd><a href="https://github.com/ryuya777/processing_templates">https://github.com/ryuya777/processing_templates</a></dd>
+<dt>comment </dt><dd>難しいんです．原因はわかりませんがwebでは動きません．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org37ce9e7" class="outline-2">
+<h2 id="org37ce9e7"><span class="section-number-2">26</span> 球拾い</h2>
+<div class="outline-text-2" id="text-26">
+<dl class="org-dl">
+<dt>author</dt><dd>河村　宇記</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/Hiroki579/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/Hiroki579/index.html</a></dd>
+<dt>raw_score</dt><dd>269.67</dd>
+<dt>github url</dt><dd><a href="https://github.com/Hiroki579/processing_templates">https://github.com/Hiroki579/processing_templates</a></dd>
+<dt>comment </dt><dd>えっとこれからに期待してください．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org613c989" class="outline-2">
+<h2 id="org613c989"><span class="section-number-2">27</span> アナログ時計</h2>
+<div class="outline-text-2" id="text-27">
+<dl class="org-dl">
+<dt>author</dt><dd>住本　響</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/ohmypasta3001/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/ohmypasta3001/index.html</a></dd>
+<dt>raw_score</dt><dd>269.67</dd>
+<dt>github url</dt><dd><a href="https://github.com/ohmypasta3001/processing_templates">https://github.com/ohmypasta3001/processing_templates</a></dd>
+<dt>comment </dt><dd>はい，そのものです．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org67b6b93" class="outline-2">
+<h2 id="org67b6b93"><span class="section-number-2">28</span> bouncy hockey</h2>
+<div class="outline-text-2" id="text-28">
+<dl class="org-dl">
+<dt>author</dt><dd>和田　拓海</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/Taku3373/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/Taku3373/index.html</a></dd>
+<dt>raw_score</dt><dd>268.27</dd>
+<dt>github url</dt><dd><a href="https://github.com/Taku3373/processing_templates">https://github.com/Taku3373/processing_templates</a></dd>
+<dt>comment </dt><dd>えっと作者の意図ではないんですが，一度落ちたのをうまく拾うとまっすぐ跳ねて超高速になってくれます．そんなところに燃えました．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org17e9c94" class="outline-2">
+<h2 id="org17e9c94"><span class="section-number-2">29</span> 単なる逃げゲー</h2>
+<div class="outline-text-2" id="text-29">
+<dl class="org-dl">
+<dt>author</dt><dd>井上　永遠</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/peteron9/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/peteron9/index.html</a></dd>
+<dt>raw_score</dt><dd>266.97</dd>
+<dt>github url</dt><dd><a href="https://github.com/peteron9/processing_templates">https://github.com/peteron9/processing_templates</a></dd>
+<dt>comment </dt><dd>単純なんですが，意外とハマります．手元が見えにくいんで．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orgee1b8b3" class="outline-2">
+<h2 id="orgee1b8b3"><span class="section-number-2">30</span> 色が変わる跳ね回る円盤</h2>
+<div class="outline-text-2" id="text-30">
+<dl class="org-dl">
+<dt>author</dt><dd>岡本　翔矢</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/marukyu8585/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/marukyu8585/index.html</a></dd>
+<dt>raw_score</dt><dd>265.97</dd>
+<dt>github url</dt><dd><a href="https://github.com/marukyu8585/processing_templates">https://github.com/marukyu8585/processing_templates</a></dd>
+<dt>comment </dt><dd>まんまです．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orga630093" class="outline-2">
+<h2 id="orga630093"><span class="section-number-2">31</span> 球拾い</h2>
+<div class="outline-text-2" id="text-31">
+<dl class="org-dl">
+<dt>author</dt><dd>内海　春音</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/harukan04/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/harukan04/index.html</a></dd>
+<dt>raw_score</dt><dd>261.97</dd>
+<dt>github url</dt><dd><a href="https://github.com/harukan04/processing_templates">https://github.com/harukan04/processing_templates</a></dd>
+<dt>comment </dt><dd>なんでか知らんけどwebでは動きません．</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org48c461b" class="outline-2">
+<h2 id="org48c461b"><span class="section-number-2">32</span> 雨を降らせた</h2>
+<div class="outline-text-2" id="text-32">
+<dl class="org-dl">
+<dt>author</dt><dd>岡田　宇晃</dd>
+<dt>pde url</dt><dd><a href="https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/TKTR123/index.html">https://ist.ksc.kwansei.ac.jp/~nishitani/Processing2019/TKTR123/index.html</a></dd>
+<dt>raw_score</dt><dd>258.30</dd>
+<dt>github url</dt><dd><a href="https://github.com/TKTR123/processing_templates">https://github.com/TKTR123/processing_templates</a></dd>
+<dt>comment </dt><dd>シュールですよ．発表の途中だと目立ったんですが．</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: 関西学院大，理工学部情報科学科，コンピュータ演習9クラス</p>
+<p class="date">Created: 2019-07-31 水 17:56</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

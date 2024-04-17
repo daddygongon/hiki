@@ -1,0 +1,944 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:mv="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta name=表題 content="">
+<meta name=キーワード content="">
+<meta http-equiv=Content-Type content="text/html; charset=csShiftJIS">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="code_review.files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>今井　捷斗</o:Author>
+  <o:LastAuthor>西谷 滋人</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>52</o:TotalTime>
+  <o:Created>2015-07-27T08:38:00Z</o:Created>
+  <o:LastSaved>2015-07-27T08:38:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>142</o:Words>
+  <o:Characters>812</o:Characters>
+  <o:Company>関西学院大学</o:Company>
+  <o:Lines>6</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>953</o:CharactersWithSpaces>
+  <o:Version>14.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=dataStoreItem href="code_review.files/item0001.xml"
+target=":code_review.files:props0002.xml">
+<link rel=themeData href="code_review.files/themedata.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>150</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>JA</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:NoLineBreaksAfter Lang="JA">$([{￡\‘“〈《「『【〔＄（［｛｢&#65505;￥</w:NoLineBreaksAfter>
+  <w:NoLineBreaksBefore Lang="JA">!%),.:;?]}￠°’”‰′″℃、。々〉》」』】〕゛゜ゝゞ・ヽヾ！％），．：；？］｝｡｣､･ﾞﾟ&#65504;</w:NoLineBreaksBefore>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="276">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 1"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 2"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 3"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 4"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 5"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 6"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 7"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 8"/>
+  <w:LsdException Locked="false" SemiHidden="false" UnhideWhenUsed="false"
+   Name="Note Level 9"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:2 7 3 9 2 2 5 2 4 4;
+	mso-font-charset:77;
+	mso-generic-font-family:modern;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"ＭＳ 明朝";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-charset:78;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1791491579 18 0 131231 0;}
+@font-face
+	{font-family:"ＭＳ ゴシック";
+	panose-1:2 11 6 9 7 2 5 8 2 4;
+	mso-font-charset:78;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1791491579 18 0 131231 0;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"@ＭＳ ゴシック";
+	panose-1:2 11 6 9 7 2 5 8 2 4;
+	mso-font-charset:78;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1791491579 18 0 131231 0;}
+@font-face
+	{font-family:"@ＭＳ 明朝";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-charset:78;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1791491579 18 0 131231 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:Century;
+	mso-ascii-font-family:Century;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"ＭＳ 明朝";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Century;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+pre
+	{mso-style-priority:99;
+	mso-style-link:"HTML 書式付き (文字)";
+	margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	tab-stops:42.0pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"ＭＳ 明朝";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Courier New";
+	mso-font-kerning:1.0pt;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:42.0pt;
+	margin-bottom:.0001pt;
+	mso-para-margin-top:0mm;
+	mso-para-margin-right:0mm;
+	mso-para-margin-bottom:0mm;
+	mso-para-margin-left:4.0gd;
+	mso-para-margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:Century;
+	mso-ascii-font-family:Century;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"ＭＳ 明朝";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Century;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+span.HTML
+	{mso-style-name:"HTML 書式付き (文字)";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML 書式付き";
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.5pt;
+	mso-ansi-font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:Century;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:99.25pt 30.0mm 30.0mm 30.0mm;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:18.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:1844970540;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1822546550 67698689 67698699 67698701 67698689 67698699 67698701 67698689 67698699 67698701;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:F06C;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:21.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:F0D8;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:F0B2;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:63.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:F06C;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:84.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:F0D8;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:105.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:F0B2;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:126.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:F06C;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:147.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:F0D8;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:F0B2;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:189.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:2033146470;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-596326750 67698689 67698699 67698701 67698689 67698699 67698701 67698689 67698699 67698701;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:F06C;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:21.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:F0D8;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:F0B2;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:63.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:F06C;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:84.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:F0D8;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:105.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:F0B2;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:126.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:F06C;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:147.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:F0D8;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:F0B2;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:189.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0mm;}
+ul
+	{margin-bottom:0mm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:標準の表;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0mm 5.4pt 0mm 5.4pt;
+	mso-para-margin:0mm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:Century;
+	mso-ascii-font-family:Century;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Century;
+	mso-hansi-theme-font:minor-latin;
+	mso-font-kerning:1.0pt;}
+table.MsoTableGrid
+	{mso-style-name:"表 (格子)";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:39;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0mm 5.4pt 0mm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0mm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:Century;
+	mso-ascii-font-family:Century;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Century;
+	mso-hansi-theme-font:minor-latin;
+	mso-font-kerning:1.0pt;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027">
+  <v:textbox inset="5.85pt,.7pt,5.85pt,.7pt"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=JA link="#0563C1" vlink="#954F72" style='tab-interval:42.0pt;
+text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:18.0pt'>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:20.0pt;font-family:"ＭＳ ゴシック";mso-ascii-theme-font:major-fareast;
+mso-fareast-theme-font:major-fareast;mso-hansi-theme-font:major-fareast'>Processing</span><span
+style='font-size:20.0pt;font-family:"ＭＳ ゴシック";mso-ascii-theme-font:major-fareast;
+mso-fareast-theme-font:major-fareast;mso-hansi-theme-font:major-fareast'>作品のコードレビュー<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=right style='text-align:right;word-break:break-all'><span
+lang=EN-US style='font-size:11.0pt;font-family:"ＭＳ 明朝";mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast'>5442 </span><span style='font-size:11.0pt;
+font-family:"ＭＳ 明朝";mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast'>今井　捷斗<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-US
+style='font-size:11.0pt;font-family:"ＭＳ 明朝";mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast'><o:p>&nbsp;</o:p></span></p>
+
+<pre style='margin-left:21.0pt;text-indent:-21.0pt;mso-list:l1 level1 lfo2'><![if !supportLists]><span
+lang=EN-US style='font-size:11.0pt;font-family:Wingdings;mso-fareast-font-family:
+Wingdings;mso-bidi-font-family:Wingdings;mso-font-kerning:0pt;mso-bidi-font-weight:
+bold'><span style='mso-list:Ignore'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"ＭＳ 明朝";
+mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-fareast'>この作品はネットなどに掲載されている、<span
+lang=EN-US>processing</span>の基本的な関数などを学び、自分で考えて作りました。工夫した点については、あまり長いコードを書きたくなかったので、配列とクラスを組み合わせや、ループ、そして<span
+lang=EN-US>random</span>関数を用いて座標の微調整などをせずに、なるべく簡単で短いコードを書きました。しかし、仕上がった作品があまりにも普通なので、</span><span
+lang=EN-US style='font-size:11.0pt;font-family:"ＭＳ 明朝";mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:"ＭＳ ゴシック";color:red;
+mso-font-kerning:0pt'>fill<b>(</b>h%360<b>,</b>80<b>,</b>80<b>);</b></span><span
+style='font-size:11.0pt;font-family:"ＭＳ 明朝";mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast'>と</span><span lang=EN-US style='font-size:
+11.0pt;font-family:"ＭＳ 明朝";mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+"ＭＳ 明朝";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:"ＭＳ ゴシック";color:red;mso-font-kerning:0pt'>h=h+5<b>;</b></span><span
+style='font-size:11.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";
+mso-font-kerning:0pt;mso-bidi-font-weight:bold'>（自作コード参照）を付け加えだんだんとボールの色が変わるように工夫しました。<span
+lang=EN-US><o:p></o:p></span></span></pre><pre style='margin-left:21.0pt'><span
+lang=EN-US style='font-size:11.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:
+"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></pre><pre
+style='margin-top:0mm;margin-right:11.0pt;margin-bottom:0mm;margin-left:21.0pt;
+margin-bottom:.0001pt;text-align:center'><b><span style='font-size:14.0pt;
+font-family:"ＭＳ ゴシック";mso-ascii-theme-font:major-fareast;mso-fareast-theme-font:
+major-fareast;mso-hansi-theme-font:major-fareast;mso-bidi-font-family:"ＭＳ ゴシック";
+mso-font-kerning:0pt'>自作コード<span lang=EN-US><o:p></o:p></span></span></b></pre>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0mm 5.4pt 0mm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=212 valign=top style='width:212.35pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0mm 5.4pt 0mm 5.4pt'><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'>Before<o:p></o:p></span></pre></td>
+  <td width=212 valign=top style='width:212.35pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0mm 5.4pt 0mm 5.4pt'><pre style='text-align:
+  left'><span lang=EN-US style='font-size:11.0pt;font-family:"ＭＳ ゴシック";
+  mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'>After<o:p></o:p></span></pre></td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=212 valign=top style='width:212.35pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0mm 5.4pt 0mm 5.4pt'><pre style='text-align:left'><span lang=EN-US
+  style='font-size:11.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";
+  mso-font-kerning:0pt;mso-bidi-font-weight:bold'>void draw(){<span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'>fill(0,20);<o:p></o:p></span></pre><pre style='text-align:left'><span
+  lang=EN-US style='font-size:11.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:
+  "ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:bold'>rect(0,0,width,height);<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'>stroke(h%360,80,80);<o:p></o:p></span></pre><pre style='text-align:
+  left'><span lang=EN-US style='font-size:11.0pt;font-family:"ＭＳ ゴシック";
+  mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'>for( int i=0; i&lt;30;i++){<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp; </span>ellipse(x[i],y[i],r,r);<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp; </span>x[i] = x[i] + dx[i];<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp; </span>y[i] = y[i] + dy[i];<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp; </span>if( x[i] &gt; width-r ||x[i]&lt;0 ){<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>dx[i] = -dx[i];<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp; </span>}<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp; </span>if( y[i] &gt; height-r || y[i] &lt; 0 ){<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>dy[i] = -dy[i];<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp; </span>}<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp;&nbsp; </span>}<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'>}<o:p></o:p></span></pre></td>
+  <td width=212 valign=top style='width:212.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0mm 5.4pt 0mm 5.4pt'><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'>void draw(){<span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'>fill(0,20);<o:p></o:p></span></pre><pre style='text-align:left'><span
+  lang=EN-US style='font-size:11.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:
+  "ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:bold'>rect(0,0,width,height);<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";color:red;mso-font-kerning:0pt'>fill<b>(</b>h%360<b>,</b>80<b>,</b>80<b>);</b><span
+  style='mso-bidi-font-weight:bold'><o:p></o:p></span></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'>stroke(h%360,80,80);<o:p></o:p></span></pre><pre style='text-align:
+  left'><span lang=EN-US style='font-size:11.0pt;font-family:"ＭＳ ゴシック";
+  mso-bidi-font-family:"ＭＳ ゴシック";color:red;mso-font-kerning:0pt'>h=h+5<b>;</b><span
+  style='mso-bidi-font-weight:bold'><o:p></o:p></span></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'>for( int i=0; i&lt;30;i++){<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp; </span>ellipse(x[i],y[i],r,r);<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp; </span>x[i] = x[i] + dx[i];<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp; </span>y[i] = y[i] + dy[i];<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp; </span>if( x[i] &gt; width-r ||x[i]&lt;0 ){<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>dx[i] = -dx[i];<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp; </span>}<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp; </span>if( y[i] &gt; height-r || y[i] &lt; 0 ){<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>dy[i] = -dy[i];<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp; </span>}<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'><span style="mso-spacerun:yes">&nbsp;&nbsp; </span>}<o:p></o:p></span></pre><pre
+  style='text-align:left'><span lang=EN-US style='font-size:11.0pt;font-family:
+  "ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:0pt;mso-bidi-font-weight:
+  bold'>}<o:p></o:p></span></pre></td>
+ </tr>
+</table>
+
+<pre style='margin-left:21.0pt;text-align:left;text-indent:-21.0pt;mso-list:
+l1 level1 lfo2'><![if !supportLists]><span lang=EN-US style='font-size:11.0pt;
+font-family:Wingdings;mso-fareast-font-family:Wingdings;mso-bidi-font-family:
+Wingdings;mso-font-kerning:0pt;mso-bidi-font-weight:bold'><span
+style='mso-list:Ignore'>l<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+style='font-size:11.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";
+mso-font-kerning:0pt;mso-bidi-font-weight:bold'>参考資料<span lang=EN-US><o:p></o:p></span></span></pre><pre
+style='margin-left:21.0pt;text-align:left'><span lang=EN-US style='font-size:
+11.0pt;font-family:"ＭＳ ゴシック";mso-bidi-font-family:"ＭＳ ゴシック";mso-font-kerning:
+0pt;mso-bidi-font-weight:bold'>http://blog.livedoor.jp/crazybio-crazybio/<o:p></o:p></span></pre></div>
+
+</body>
+
+</html>
