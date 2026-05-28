@@ -47,7 +47,7 @@ def typekey_cookie(name, value, max_age = Session::MAX_AGE)
   })
 end
 
-add_body_enter_proc(Proc.new do
+add_body_enter_proc(&Proc.new do
   if !auth?
     label_auth_typekey_login
   elsif @user

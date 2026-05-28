@@ -40,7 +40,7 @@ module Hiki
     def msg_mail_off; "Do not send update e-mails" end
     def msg_use; "Use" end
     def msg_unuse; 'Don\'t use' end
-    def msg_login_info; 'If you want to login as an administrator, type \'admin\' in the Name field.' end
+    def msg_login_info; 'If you want to login as an administrator, type \'????\' in the Name field.' end
     def msg_login_failure; "Wrong name or password." end
     def msg_name; "Name" end
     def msg_password; "Password" end

@@ -1,6 +1,7 @@
-#!/Users/bob/.rbenv/versions/2.7.2/bin/ruby
+#!/Users/bob/.rbenv/versions/3.0.4/bin/ruby
+# !/Users/bob/.rbenv/versions/2.7.2/bin/ruby
 #!/usr/bin/env ruby
-#!/usr/local/Cellar/ruby/2.5.2/bin/ruby
+# !/Users/bob/.rbenv/shims/ruby
 # Copyright (C) 2002-2004 TAKEUCHI Hitoshi <hitoshi@namaraii.com>
 $LOAD_PATH.unshift "lib"
 

@@ -40,7 +40,7 @@ module Hiki
     def msg_mail_off; "Keine Email bei ver&auml;nderungen" end
     def msg_use; "Benutze" end
     def msg_unuse; "Benutze kein" end
-    def msg_login_info; 'Wenn Sie sich als Administrator anmelden wollen, tippen Sie \'admin\' in das Namensfeld.' end
+    def msg_login_info; 'Wenn Sie sich als Administrator anmelden wollen, tippen Sie \'????\' in das Namensfeld.' end
     def msg_login_failure; "Falscher Benutzername oder Passwort." end
     def msg_name; "Name" end
     def msg_password; "Passwort" end

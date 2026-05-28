@@ -55,7 +55,7 @@ def render( text )
 end
 
 if @options['command'] == 'view'
-  add_body_enter_proc(Proc.new do |date|
+  add_body_enter_proc(&Proc.new do |date|
                         date = date.strftime("%Y%m%d")
                         @footnote_name.replace "f%02d"
                         @footnote_url.replace "#{@index}#{anchor date}##{@footnote_name}"
@@ -66,7 +66,7 @@ if @options['command'] == 'view'
                         ""
                       end)
 
-  add_body_leave_proc(Proc.new do |date|
+  add_body_leave_proc(&Proc.new do |date|
                         if @footnote_name and @footnotes.size > 0
                           %Q|<div class="footnote">\n| +
                             @footnotes.collect do |fn|

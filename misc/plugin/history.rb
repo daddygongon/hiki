@@ -68,7 +68,7 @@ def history_diff
   h.history_diff
 end
 
-add_body_enter_proc(Proc.new do
+add_body_enter_proc(&Proc.new do
   add_plugin_command('history', history_label, {'p' => true})
 end)
 

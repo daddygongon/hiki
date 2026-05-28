@@ -33,6 +33,6 @@ EOS
   ::Hiki::Response.new(sources, 200, header)
 end
 
-add_body_enter_proc(Proc.new do
+add_body_enter_proc(&Proc.new do
   add_plugin_command('src', src_label, {'p' => true})
 end)

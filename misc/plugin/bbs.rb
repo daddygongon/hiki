@@ -1,6 +1,6 @@
 # Copyright (C) 2002-2003 TAKEUCHI Hitoshi <hitoshi@namaraii.com>
 
-add_body_enter_proc(Proc.new do
+add_body_enter_proc(&Proc.new do
   @bbs_num = 0
   ""
 end)

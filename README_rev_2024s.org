@@ -1,0 +1,130 @@
+#+OPTIONS: ^:{}
+#+STARTUP: indent nolineimages overview num
+#+TITLE: title
+#+AUTHOR: Shigeto R. Nishitani
+#+EMAIL:     (concat "shigeto_nishitani@mac.com")
+#+LANGUAGE:  jp
+# +OPTIONS:   H:4 toc:t num:2
+#+OPTIONS:   toc:nil
+#+TAG: hoge, hoge2
+#+TWITTER: off
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+
+* sql injection? <2024-08-08 Thu>
+sql injectionの疑いあり．
+DBを調べたが，
+> grep database_url **/*.rb
+> lib/hiki/repository/rdb.rb:        connect = Sequel.connect(ENV["DATABASE_URL"] || @database_url)
+でSequel(DBとのadaptor, sqlを含む)を通してアクセス．
+DB自身は，
+#+begin_src ruby
+#  head lib/tmarshal.rb 
+# Original Copyright (C) Rubikichi
+# Modified by TAKEUCHI Hitoshi
+# You can redistribute it and/or modify it under the terms of
+# the Ruby's licence.
+
+module TMarshal
+#+end_src
+で自作のflatfile DBを使っているみたい．
+
+tool/convert.rb:#  require_relative "../hiki/db/#{database_type}"
+tool/convert.rb:  require_relative "../lib/hiki/storage/#{database_type}"
+tool/convert.rb:#  database_class = ::Hiki::const_get("HikiDB_#{database_type}")
+
+
+* new serever
+ist/hsi/cs/am サーバの
+RHEL7 のOSサポートが6月末で終了するため、
+RHEL9 にリプレースします。
+というのが，月曜日に連絡があって，
+そのhiki対応．
+
+西谷です．私のpcの方も修正して問題なく動作することを確認しました．
+それよりも，2.7.2では10秒以上renderingにかかっていたのが，
+3.0.4では2秒で済むようになりました．これはすごい．
+これで安心して退官まで使わせていただきます．
+
+> ssh nishitani@dius02.ksc.kwansei.ac.jp
+$ pwd
+/home/nishitani/public_html
+
+#!/usr/local/Cellar/ruby/2.5.2/bin/ruby
+#!/usr/bin/env ruby
+
+> /usr/bin/env ruby -v
+ruby 3.0.4p208 (2022-04-12 revision 3fa771dded) [x86_64-linux]
+
+* setup mine
+> head hiki.cgi
+#!/Users/bob/.rbenv/versions/3.0.4/bin/ruby
+#!/Users/bob/.rbenv/versions/2.7.2/bin/ruby
+
+> rbenv local 3.0.4
+> gem install sequel # load error sequel
+> gem pristine io-console --version 0.5.9
+> gem install rdtool # load error rd/rdfmt
+> gem install docdiff
+
+* tutty
+関数定義
+def add_hogehoge_proc(block = Proc.new)
+↓
+def add_hogehoge_proc(&block)
+
+/home/nishitani/public_html/MapleHiki/lib/hiki/plugin.rb
+/home/nishitani/public_html/lib/hiki/plugin.rb
+
+
+呼び出し側
+add_hogehoge_proc(Proc.new
+↓
+add_hogehoge_proc(&Proc.new
+
+/home/nishitani/public_html/MapleHiki/misc/plugin/auth_typekey.rb
+/home/nishitani/public_html/MapleHiki/misc/plugin/bbs.rb
+/home/nishitani/public_html/MapleHiki/misc/plugin/comment.rb
+/home/nishitani/public_html/MapleHiki/misc/plugin/footnote.rb
+/home/nishitani/public_html/MapleHiki/misc/plugin/google-sitemaps.rb
+/home/nishitani/public_html/MapleHiki/misc/plugin/history.rb
+/home/nishitani/public_html/MapleHiki/misc/plugin/pagerank.rb
+/home/nishitani/public_html/MapleHiki/misc/plugin/referer.rb
+/home/nishitani/public_html/MapleHiki/misc/plugin/rss.rb
+/home/nishitani/public_html/MapleHiki/misc/plugin/src.rb
+/home/nishitani/public_html/misc/plugin/auth_typekey.rb
+/home/nishitani/public_html/misc/plugin/bbs.rb
+/home/nishitani/public_html/misc/plugin/comment.rb
+/home/nishitani/public_html/misc/plugin/footnote.rb
+/home/nishitani/public_html/misc/plugin/google-sitemaps.rb
+/home/nishitani/public_html/misc/plugin/history.rb
+/home/nishitani/public_html/misc/plugin/pagerank.rb
+/home/nishitani/public_html/misc/plugin/referer.rb
+/home/nishitani/public_html/misc/plugin/rss.rb
+/home/nishitani/public_html/misc/plugin/src.rb
+
+grep Proc *.rb (base) 
+auth_typekey.rb:add_body_enter_proc(Proc.new do
+bbs.rb:add_body_enter_proc(Proc.new do
+comment.rb:add_body_enter_proc(Proc.new do
+footnote.rb:  add_body_enter_proc(Proc.new do |date|
+footnote.rb:  add_body_leave_proc(Proc.new do |date|
+google-sitemaps.rb:add_body_enter_proc(Proc.new do
+history.rb:add_body_enter_proc(Proc.new do
+pagerank.rb:add_body_enter_proc(Proc.new do
+referer.rb:add_body_leave_proc(Proc.new do
+rss.rb:add_body_enter_proc(Proc.new do
+rss.rb:add_header_proc(Proc.new do
+src.rb:add_body_enter_proc(Proc.new do
+
+
+以下のコマンドで文字列置換しました。
+cd /home/nishitani/public_html
+perl -pi -e 's/block = Proc.new/&block/' lib/hiki/plugin.rb MapleHiki/lib/hiki/plugin.rb
+LANG=C grep 'proc(Proc.new' -rlZ --binary-files=without-match . \
+   | xargs -0 perl -pi -e 's/proc\(Proc.new/proc\(&Proc.new/'
+
+http://dius02.ksc.kwansei.ac.jp/~nishitani/MapleHiki/
+http://dius02.ksc.kwansei.ac.jp/~nishitani/
+を ist と見比べましたが、footer の
+Powered by Ruby 3.0.4-p208 (2022-04-12).
+だけ違って、ほかは同じと思います。

@@ -2,7 +2,7 @@
 
 # modified by yoshimi.
 
-add_body_enter_proc(Proc.new do
+add_body_enter_proc(&Proc.new do
   @comment_num = 0
   ""
 end)

@@ -37,6 +37,6 @@ def google_sitemaps
   ::Hiki::Response.new(body, 200, header)
 end
 
-add_body_enter_proc(Proc.new do
+add_body_enter_proc(&Proc.new do
   add_plugin_command('google_sitemaps', nil)
 end)

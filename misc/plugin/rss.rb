@@ -107,7 +107,7 @@ def rss
   end
 end
 
-add_body_enter_proc(Proc.new do
+add_body_enter_proc(&Proc.new do
   @conf['rss.mode'] ||= 0
   if @conf['rss.menu'] == 1
     add_plugin_command('rss', nil)
@@ -116,7 +116,7 @@ add_body_enter_proc(Proc.new do
   end
 end)
 
-add_header_proc(Proc.new do
+add_header_proc(&Proc.new do
   %Q!  <link rel="alternate" type="application/rss+xml" title="RSS" href="#{@conf.index_url}?c=rss">!
 end)
 

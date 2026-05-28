@@ -100,7 +100,7 @@ def replace_url(url)
   replaced_url
 end
 
-add_body_leave_proc(Proc.new do
+add_body_leave_proc(&Proc.new do
   begin
     Dir.mkdir(referer_path) unless File.exist?(referer_path)
 

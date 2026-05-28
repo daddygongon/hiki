@@ -41,7 +41,7 @@ module Hiki
     def msg_mail_off; "Ne pas envoyer un e-mail de notification" end
     def msg_use; "Utiliser" end
     def msg_unuse; "Ne pas utiliser" end
-    def msg_login_info; '(TRANSLATE PLEASE) If you want to login as an administrator, type \'admin\' in the Name field.' end
+    def msg_login_info; '(TRANSLATE PLEASE) If you want to login as an administrator, type \'???\' in the Name field.' end
     def msg_login_failure; "(TRANSLATE PLEASE) Wrong name or password." end
     def msg_name; "Nom" end
     def msg_password; "Mot de passe" end

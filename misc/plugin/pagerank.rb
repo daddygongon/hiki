@@ -412,7 +412,7 @@ def get_rank_table(page_names, pagerank, calcsec, options)
 end
 
 # append hiki menu
-add_body_enter_proc(Proc.new do
+add_body_enter_proc(&Proc.new do
   add_plugin_command('pagerank_page', PageRank.menu_label, {})
 end)
 

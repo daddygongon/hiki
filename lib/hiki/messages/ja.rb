@@ -33,7 +33,7 @@ module Hiki
     def msg_mail_off; "非通知" end
     def msg_use; "使用する" end
     def msg_unuse; "使用しない" end
-    def msg_login_info; "管理者としてログインする際は、ユーザ名に admin と入力してください。" end
+    def msg_login_info; "管理者としてログインする際は、ユーザ名に ??? と入力してください。" end
     def msg_login_failure; "ユーザ名またはパスワードが間違っています。" end
     def msg_name; "ユーザ名" end
     def msg_password; "パスワード" end
